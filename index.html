@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hs Mart</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg bg-primary-subtle bg-opacity-5 ">
+        <div class="container-fluid ">
+          <a class="navbar-brand fw-bolder" href="#">Hs Mart</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse container-flex justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Discounts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gifts</a>
+              </li>
+
+            </ul>
+            <div>
+                <!-- <span><a href="./login.html">login</a></span> -->
+                <span class=" btn btn-dark bg-success bg-opacity-10 text-success m-2 px-2 py-2 rounded-circle">
+                  <a class="" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                    aria-controls="offcanvasExample">
+                    <i class="bi bi-bag-check"></i>
+                  </a>
+                </span>
+                <span class="btn btn-dark bg-success bg-opacity-10 text-success m-2 px-2 py-2 rounded-circle">
+                  <a class="" data-bs-toggle="offcanvas" href="#login" role="button" aria-controls="offcanvasExample">
+                    <i class="bi bi-person-fill" ></i>
+                  </a>
+                </span>
+              </div>
+          </div>
+        </div>
+      </nav>
+  </header>
+  <main>
+    <section class="cart">
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Cart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body" id="cartItems">
+
+        </div>
+        <button class="btn btn-success rounded-0">check out <i class="bi bi-arrow-right"></i></button>
+      </div>
+    </section>
+    <section class="login">
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="login" aria-labelledby="#loginLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="loginLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body" id="login">
+          <form action="">
+            <div class="mb-3">
+              <label for="email" class="form-label">email</label>
+              <input type="email" class="form-control" id="email" placeholder="abc@abc.com">
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="min 5 character">
+            </div>
+            <button class="btn btn-success rounded-0">login <i class="bi bi-arrow-right"></i></button>
+            <span><a class="" data-bs-toggle="offcanvas" href="#register" role="button" aria-controls="offcanvasExample">
+              Register Now!
+            </a></span>
+          </form>
+      </div>
+    </section>
+    <section class="register">
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="register" aria-labelledby="#registerLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="registerLabel">register</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body" id="login">
+          <form action="">
+            <div class="mb-3">
+              <label for="email" class="form-label">email</label>
+              <input type="email" class="form-control" id="email" placeholder="abc@abc.com">
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="min 5 character">
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="password" placeholder="min 5 character">
+            </div>
+            <button class="btn btn-success rounded-0">Register <i class="bi bi-arrow-right"></i></button>
+            <span><a class="" data-bs-toggle="offcanvas" href="#login" role="button" aria-controls="offcanvasExample">
+              Login Now
+            </a></span>
+          </form>
+      </div>
+    </section>
+    <section class="products">
+      <div class="container">
+
+        <h1 class="h3 my-5">Products</h1>
+
+        <div class="products">
+          <div class="row" id="productsRow">
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer>
+    <section class="contact">
+        <div class="contact-info">
+            <div class="first-info">
+           <h3>Hs Mart</h3>
+    
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>0664477999</p>
+                <p>Hsmart@gmail.com</p>
+    
+                <div class="social-icons">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+                <div class="second-info">
+                    <h4>Support</h4>
+                    <p>Contact Us</p>
+                    <p>About Us</p>
+                    <p>Return Policy</p>
+                    <p>Privacy</p>
+    
+                </div>
+           
+        </div>
+    </section>
+    
+    <div class="end-text">
+    <p>Copyright @2023. All Rights Reserved. Designed by Hassan Hatim</p>
+    </div>
+    </footer>
+  <script src="./app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
